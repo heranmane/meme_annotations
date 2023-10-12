@@ -1,0 +1,17 @@
+<View>
+  <!-- Display the image -->
+  <Image name="my_image" value="$image"/>
+  <!-- Display the text -->
+  <Text name="my_text" value="$text"/>
+  <!-- Sentiment Classification -->
+  <Choices name="sentiment" toName="my_text" showInLine="true">
+    <Choice value="positive" background="green"/>
+    <Choice value="negative" background="red"/>
+    <Choice value="neutral" background="gray"/>
+  </Choices>
+  <!-- Hate Speech Detection -->
+  <Choices name="hate_speech" toName="my_text" showInLine="true">
+    <Choice value="hateful" background="red"/>
+    <Choice value="not_hateful" background="green"/>
+  </Choices>
+</View>
